@@ -2,6 +2,7 @@ alsa-utils
 amd-ucode
 arch-install-scripts
 archinstall
+awk
 b43-fwcutter
 base
 bind-tools
@@ -21,12 +22,14 @@ dnsmasq
 dosfstools
 e2fsprogs
 edk2-shell
+edk2-ovmf
 efibootmgr
 espeakup
 ethtool
 exfatprogs
 f2fs-tools
 fatresize
+findutils
 fsarchiver
 gnu-netcat
 gpart
@@ -34,6 +37,7 @@ gpm
 gptfdisk
 grml-zsh-config
 grub
+gzip
 hdparm
 intel-ucode
 ipw2100-fw
@@ -45,7 +49,9 @@ jfsutils
 kitty-terminfo
 less
 lftp
+libarchive
 libfido2
+libisoburn
 libusb-compat
 linux
 linux-atm
@@ -74,6 +80,7 @@ ntfs-3g
 nvme-cli
 openconnect
 openssh
+openssl
 openvpn
 partclone
 parted
@@ -137,7 +144,6 @@ unzip
 unrar
 zip
 p7zip
-grub
 efibootmgr
 exa
 keepassxc
@@ -224,8 +230,7 @@ xsettingsd
 yad
 
 ## Login
-lightdm
-lightdm-webkit2-greeter
+sddm
 
 ## AUR Packages
 brave-bin
@@ -233,7 +238,7 @@ picom-jonaburg-git
 maim
 paru
 yay
-
+pfetch
 
 
 
