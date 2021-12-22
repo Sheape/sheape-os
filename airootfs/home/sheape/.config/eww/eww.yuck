@@ -1,0 +1,16 @@
+(include "notification.yuck")
+
+;;; Background
+(defwindow background
+           :monitor 0
+           :geometry (geometry :x "1%"
+                               :y "50px"
+                               :width "25%"
+                               :height "94%"
+                               :anchor "top right")
+           :stacking "fg"
+           :windowtype "normal"
+           :wm-ignore true
+           ""
+)
+

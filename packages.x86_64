@@ -15,7 +15,6 @@ cryptsetup
 darkhttpd
 ddrescue
 dhclient
-dhcpcd
 diffutils
 dmraid
 dnsmasq
@@ -124,6 +123,7 @@ qtile
 redshift
 wget
 networkmanager
+network-manager-applet
 emacs
 dunst
 feh
@@ -140,6 +140,10 @@ p7zip
 grub
 efibootmgr
 exa
+keepassxc
+zathura
+zathura-pdf-mupdf
+sxiv
 
 ## Xorg
 xorg-server
@@ -193,7 +197,6 @@ automake
 binutils
 bison
 calc
-dunst
 fakeroot
 gcc
 gparted
@@ -227,7 +230,7 @@ lightdm-webkit2-greeter
 ## AUR Packages
 brave-bin
 picom-jonaburg-git
-maim-git
+maim
 paru
 yay
 

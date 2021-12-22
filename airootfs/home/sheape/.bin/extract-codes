@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+# Image directories with all the pictures as input.
+echo "Choose a folder..."
+image_dir="$(zenity --file-selection --directory)"
+
+# Output file
+echo "Choose a file location for the output file..."
+output="$(zenity --file-selection --save)"
+
+# Total pictures
+total="$(ls ${image_dir}| wc -l)"
+
+
+echo "Processing images.."
+for image in $(ls $image_dir)
+do
+    echo "Extracting code in ${image}"
+    tesseract ${image_dir}/${image} - | grep -Po "(?<=^Voucher Code[[:space:]])\w*" >> "${output}.bak"
+done
+
+echo "Done.."
+echo "Extracted codes from $(cat ${output}.bak | wc -l)/${total} images"
+echo "Removing Duplicates"
+uniq ${output}.bak $output
+rm ${output}.bak
+
+echo "All done, you can now view your extracted codes"
