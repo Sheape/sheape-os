@@ -30,6 +30,9 @@ automated_script ()
     pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
     pacman-key --lsign-key FBA220DFC880C036
     pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+
+    chmod +x $HOME/.bin/*
+    timedatectl set-timezone Asia/Manila
 }
 
 if [[ $(tty) == "/dev/tty1" ]]; then

@@ -1,2 +1,5 @@
-root:!*::root
-archie:!*::
+root:x:0:root
+adm:x:4:sheape
+wheel:x:10:sheape
+uucp:x:14:sheape
+sheape:x:1000:
